@@ -1,6 +1,6 @@
 # react-redux-types-loader
 
-1. 问题
+#### 1. 问题
 
 在react-redux模块使用时，types.js文件中的namespace一直是个头疼的问题，常见的写法如下：
 
@@ -18,7 +18,7 @@ export const b = `${_path}b`;
 ```
 在我们拷贝文件夹的过程中，容易忘记或者不小心导致了namespace中的path相同，就会导致==reducer==被触发多次。
 
-2. react-redux-types-loader的写法
+#### 2. react-redux-types-loader的写法
 
 
 ```
