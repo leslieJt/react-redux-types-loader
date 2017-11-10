@@ -1,9 +1,9 @@
 module.exports = function({ types: t }) {
-  let _unique_path = +new Date();
   return {
     name: 'react-redux-types-plugin',
     visitor: {
-      ExportNamedDeclaration(path) {
+      ExportNamedDeclaration(path, state) {
+        const { module_path } = state.opts;
         if (!path.get('declaration').isVariableDeclaration()) return;
         let declaration = path.get('declaration');
         if (!declaration.get('declarations').length) return;
@@ -11,7 +11,11 @@ module.exports = function({ types: t }) {
           if (item.isVariableDeclarator()) {
             item
               .get('init')
-              .replaceWith(t.StringLiteral(_unique_path + '_' + index));
+              .replaceWith(
+                t.StringLiteral(
+                  module_path ? module_path : +new Date() + '_' + index
+                )
+              );
           }
         });
       }
