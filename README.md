@@ -16,7 +16,10 @@ const _path = 'order_list_';
 export const a = `${_path}a`;
 export const b = `${_path}b`;
 ```
-在我们拷贝文件夹的过程中，容易忘记或者不小心导致了namespace中的path相同，就会导致==reducer==被触发多次。
+
+order_list就是平时我们遇到的type前缀，保证每个文件夹下的type跟其他文件夹下的type不冲突
+
+但是我们在拷贝文件夹的过程中，容易忘记或者不小心让namespace中的path相同，结果就会导致reducer的监听被触发多次。
 
 #### 2. react-redux-types-loader的写法
 
