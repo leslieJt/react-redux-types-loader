@@ -13,7 +13,7 @@ module.exports = function({ types: t }) {
               .get('init')
               .replaceWith(
                 t.StringLiteral(
-                  module_path ? module_path : +new Date() + '_' + index
+                  (module_path ? module_path : +new Date()) + '_' + index
                 )
               );
           }
