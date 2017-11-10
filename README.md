@@ -94,4 +94,4 @@ webpack.config.js
 ---
 ### 注意事项
 
-components文件夹下的所有types.js的文件都将被篡改源码，所以如果有需要命名为types.js的文件请放在components文件夹外，或者取其他名称。
+components文件夹下的所有types.js的文件都将被篡改源码，所以如果有需要命名为types.js的文件请放在components文件夹外、取其他名称或者使用exclude不处理该文件。
