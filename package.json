@@ -6,5 +6,9 @@
   "scripts": {},
   "keywords": ["react", "redux", "react-redux", "type", "types"],
   "author": "stoney",
-  "license": "ISC"
+  "license": "ISC",
+  "peerDependencies":{
+    "babel-core": "^6.26.0",
+    "webpack": "^3.8.1"
+  }
 }
