@@ -1,0 +1,10 @@
+{
+  "name": "react-redux-types-loader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {},
+  "keywords": ["react", "redux", "react-redux", "type", "types"],
+  "author": "stoney",
+  "license": "ISC"
+}
