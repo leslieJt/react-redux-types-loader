@@ -37,7 +37,7 @@ export let c;
 ```
 export const a = 'aaa';
 export const b = 'bbb';
-export let c;
+export let c = 'ccc';
 ```
 以上几种types文件的写法都能支持，而react-redux-types-loader会自动帮你解决namespace的问题。namespace值遵循项目中的文件夹路径。
 
