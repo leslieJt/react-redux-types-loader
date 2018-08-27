@@ -1,14 +1,31 @@
 {
   "name": "react-redux-types-loader",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.2.2",
+  "description": "shein types",
   "main": "lib/index.js",
-  "scripts": {},
-  "keywords": ["react", "redux", "react-redux", "type", "types"],
+  "scripts": {
+    "build": "babel src --out-dir lib"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-redux",
+    "type",
+    "types"
+  ],
   "author": "stoney",
   "license": "ISC",
-  "peerDependencies":{
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "peerDependencies": {
     "babel-core": "^6.26.0",
     "webpack": "^3.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stoneyallen/react-redux-types-loader.git"
   }
 }
