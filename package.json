@@ -1,6 +1,6 @@
 {
   "name": "react-redux-types-loader",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "shein types",
   "main": "lib/index.js",
   "scripts": {

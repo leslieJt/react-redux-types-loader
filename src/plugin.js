@@ -9,7 +9,7 @@ module.exports = function({ types: t }) {
         if (!declaration.get('declarations').length) return;
         declaration.get('declarations').map((item, index) => {
           if (item.isVariableDeclarator()) {
-            if(item.get('init').get('expressions'))return item;//变量赋值时，不进行变换
+            if(item.get('init').node && item.get('init').get('expressions'))return item;//变量赋值时，不进行变换
             let value = item.get('init').node
               ? item.get('init').node.value
               : '';
