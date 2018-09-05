@@ -1,8 +1,11 @@
 {
   "presets": [
-    [ "env", {
+    [ "@babel/env", {
       "modules": false,
-      "useBuiltIns": true
+      "useBuiltIns": "usage",
+      "targets": {
+        "node": 6
+      }
     }]
   ]
 }

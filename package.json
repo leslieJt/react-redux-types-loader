@@ -16,12 +16,12 @@
   "author": "stoney",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0"
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   },
   "peerDependencies": {
-    "babel-core": "^6.26.0",
+    "@babel/core": "^7.0.0",
     "webpack": "^3.8.1"
   },
   "repository": {
